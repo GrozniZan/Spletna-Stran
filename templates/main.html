@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{ime_podjetja}}</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+    }
+    header {
+      background-color: #333;
+      color: white;
+      padding: 1rem;
+      text-align: center;
+    }
+    nav {
+      background-color: #444;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 1rem;
+    }
+    .nav-links {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background-color: #555;
+    }
+    .login-button {
+      background-color: #008CBA;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .login-button:hover {
+      background-color: #0079a6;
+    }
+    main {
+      padding: 2rem;
+      text-align: center;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 1rem;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Dobrodošli na domači strani</h1>
+    <p>Vaš zanesljiv vir novic in projektov</p>
+  </header>
+
+  <nav>
+    <div class="nav-links">
+      <a href="#">Domov</a>
+      <a href="#">O nas</a>
+      <a href="#">Projekti</a>
+      <a href="#">Kontakt</a>
+    </div>
+    <a href="/form/" class="login-button">Prijava</a>
+  </nav>
+
+  <main>
+    <h2>Pozdravljen, svet!</h2>
+    <p>To je preprosta domača stran, ustvarjena s HTML in CSS. Po želji jo lahko prilagodite!</p>
+  </main>
+
+  <footer>
+    &copy; 2025 Vaše ime. Vse pravice pridržane.
+  </footer>
+</body>
+</html>
