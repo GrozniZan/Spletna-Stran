@@ -35,7 +35,7 @@ def view_db():
     cursor.execute("select * from contacts;")
     return cursor.fetchall()
 
-@app.route('/reg-test/')
+@app.route('/reg/')
 def registracija():
     return render_template("registracija.html")
 

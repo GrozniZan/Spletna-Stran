@@ -1,11 +1,32 @@
-<form action="/form-submit">
-    Prijava:
-    <br>
-    Uporabniško ime:
-    <input type="text" name="username" id="username"></input>
-    <br>
-    Geslo:
-    <input type="text" name="password" id="password"></input>
-    <br>
-    <input type="submit"></input>
-</form>
+<body style="margin:0; padding:0; background-color:#1e1e2f;">
+
+<div style="
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+">
+    <form action="/form-submit" style="
+        width: 300px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0 4px 10px rgb(243, 231, 231);
+        font-family: Arial;
+    ">
+        <h3 style="margin-top: 0; text-align:center;">Prijava</h3>
+        
+        <label for="username">Uporabniško ime:</label><br>
+        <input type="text" name="username" id="username" 
+               style="width: 100%; padding: 8px; margin: 5px 0 15px 0; border-radius: 5px; border: 1px solid #aaa;">
+        
+        <label for="password">Geslo:</label><br>
+        <input type="password" name="password" id="password" 
+               style="width: 100%; padding: 8px; margin: 5px 0 15px 0; border-radius: 5px; border: 1px solid #aaa;">
+        
+        <input type="submit" value="Prijava" 
+               style="width: 100%; padding: 10px; border: none; border-radius: 5px; background-color: #4CAF50; color: white; cursor: pointer;">
+    </form>
+</div>
+
+</body>

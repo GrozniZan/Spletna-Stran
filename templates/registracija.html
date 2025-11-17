@@ -1,11 +1,61 @@
-<form action="/registracija-submit">
-    Registracija:
-    <br>
-    Uporabniško ime:
-    <input type="text" name="username" id="username"></input>
-    <br>
-    Geslo:
-    <input type="text" name="password" id="password"></input>
-    <br>
-    <input type="submit"></input>
-</form>
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registracija</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        label {
+            display: block;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            margin-top: 25px;
+            width: 100%;
+            padding: 12px;
+            background-color: #0066cc;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0055aa;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Registracija</h2>
+    
+    <form action="/registracija-submit" method="POST">
+        <label for="username">Uporabniško ime</label>
+        <input type="text" name="username" id="username" required>
+        
+        <label for="password">Geslo</label>
+        <input type="password" name="password" id="password" required>
+        
+        <button type="submit">Registriraj se</button>
+    </form>
+
+</body>
+</html>
